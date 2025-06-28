@@ -3,7 +3,16 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import SectionHeading from "@/components/section-heading"
-import { Database, LineChart, FileText, Code, GitBranch, Workflow, TestTube, MessageSquare } from "lucide-react"
+import {
+  LineChart,
+  FileText,
+  Code,
+  GitBranch,
+  TestTube,
+  MessageSquare,
+  PenToolIcon as Tool,
+  Settings,
+} from "lucide-react"
 import { motion } from "framer-motion"
 
 export default function Skills() {
@@ -11,42 +20,125 @@ export default function Skills() {
     {
       title: "Business Analysis & Documentation",
       icon: <FileText className="h-5 w-5 md:h-6 md:w-6" />,
-      skills: ["Requirements Gathering", "BRD Creation", "Functional Specifications", "Process Documentation"],
+      skills: [
+        "Requirement Elicitation",
+        "Stakeholder Interviews",
+        "Workshops",
+        "Process Mapping",
+        "User Story Creation",
+        "Business Requirements Documentation (BRD)",
+        "Functional Specifications",
+        "Agile User Story Writing",
+        "Stakeholder Engagement",
+        "Policy and Business Analysis",
+      ],
     },
     {
-      title: "Data Analysis & Visualization",
+      title: "Data Analysis & Reporting",
       icon: <LineChart className="h-5 w-5 md:h-6 md:w-6" />,
-      skills: ["SQL", "Tableau", "Power BI", "Python", "Pandas", "NumPy", "Data-Driven Decision Making"],
+      skills: [
+        "Advanced SQL (PostgreSQL, MySQL, DB2)",
+        "Power BI Dashboards",
+        "KPI Tracking",
+        "Data Validation and Cleansing",
+        "Excel (Pivot Tables, Lookups, Charts)",
+        "ETL Workflows using SSIS",
+        "Data Flow and Process Modelling",
+        "Business Intelligence Solutions",
+        "Reporting Automation",
+      ],
     },
     {
-      title: "Database Management & Engineering",
-      icon: <Database className="h-5 w-5 md:h-6 md:w-6" />,
-      skills: ["Database Design", "Optimization", "Data Mapping", "Validation Protocols", "ETL Processes"],
+      title: "Systems Analysis & Integration",
+      icon: <Settings className="h-5 w-5 md:h-6 md:w-6" />,
+      skills: [
+        "Enterprise Applications",
+        "Data Mapping and Validation",
+        "Solution Requirement Definition",
+        "Internal Documentation",
+        "Integration Planning",
+        "System Support",
+        "Business Process Mapping",
+        "Use Case Modelling",
+        "UML Diagrams",
+        "Workflow Design",
+        "Privacy and Security Considerations",
+      ],
     },
     {
-      title: "Software Development",
-      icon: <Code className="h-5 w-5 md:h-6 md:w-6" />,
-      skills: ["Web Development", "JavaScript", "Cross-Device Functionality", "Usability"],
-    },
-    {
-      title: "Agile Project Management",
-      icon: <GitBranch className="h-5 w-5 md:h-6 md:w-6" />,
-      skills: ["Scrum", "Jira", "Confluence", "MS Project", "Timely Delivery"],
-    },
-    {
-      title: "Process & Workflow Optimization",
-      icon: <Workflow className="h-5 w-5 md:h-6 md:w-6" />,
-      skills: ["Process Analysis", "Efficiency Improvement", "Operational Performance"],
-    },
-    {
-      title: "Testing & Quality Assurance",
+      title: "QA & Testing",
       icon: <TestTube className="h-5 w-5 md:h-6 md:w-6" />,
-      skills: ["User Acceptance Testing (UAT)", "Test Case Creation", "System Quality Assurance"],
+      skills: [
+        "Test Case Design",
+        "UI and Functional Testing",
+        "Regression Testing",
+        "UAT Support",
+        "Defect Tracking and Reporting",
+        "Agile Testing Cycles",
+        "Test Suite Development and Execution",
+        "User Acceptance Testing Strategy",
+        "Testing Planning",
+      ],
+    },
+    {
+      title: "Technical Foundations",
+      icon: <Code className="h-5 w-5 md:h-6 md:w-6" />,
+      skills: [
+        "SQL Scripting",
+        "Unix Shell Scripting",
+        "Basic Python",
+        "JavaScript and React (Academic)",
+        "CRUD Operations",
+        "Data Pipeline Support",
+        "DevOps Familiarity",
+        "Version Control (Git/GitHub)",
+      ],
+    },
+    {
+      title: "Agile & Collaboration",
+      icon: <GitBranch className="h-5 w-5 md:h-6 md:w-6" />,
+      skills: [
+        "Agile Methodology",
+        "Sprint Planning",
+        "Cross-Functional Team Communication",
+        "Technical Documentation",
+        "Stakeholder Communication",
+        "User Training and Support",
+      ],
+    },
+    {
+      title: "Tools & Platforms",
+      icon: <Tool className="h-5 w-5 md:h-6 md:w-6" />,
+      skills: [
+        "Power BI",
+        "Tableau",
+        "PowerApps",
+        "Power Automate",
+        "SharePoint",
+        "Confluence",
+        "SSIS",
+        "SAP S/4HANA",
+        "SQL Server Analysis Services (SSAS)",
+        "Visual Studio",
+        "Jira",
+        "Git/GitHub",
+      ],
     },
     {
       title: "Soft Skills",
       icon: <MessageSquare className="h-5 w-5 md:h-6 md:w-6" />,
-      skills: ["Problem-Solving", "Communication", "Teamwork", "Time Management", "Task Prioritization"],
+      skills: [
+        "Analytical Thinking",
+        "Attention to Detail",
+        "Written Communication",
+        "Problem-Solving",
+        "Adaptability",
+        "Time Management",
+        "Teamwork",
+        "Discretion in Handling Information",
+        "Interpersonal and Negotiation Skills",
+        "Leadership Experience",
+      ],
     },
   ]
 
@@ -89,4 +181,3 @@ export default function Skills() {
     </section>
   )
 }
-

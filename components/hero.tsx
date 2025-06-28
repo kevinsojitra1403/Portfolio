@@ -14,6 +14,13 @@ export default function Hero() {
     setMounted(true)
   }, [])
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   if (!mounted) return null
 
   return (
@@ -55,16 +62,20 @@ export default function Hero() {
           analysis, and database management.
         </p>
         <div className="flex flex-wrap justify-center gap-3 md:gap-4 pt-4">
-          <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base">
-            <a href="#contact">Get In Touch</a>
+          <Button
+            size="lg"
+            className="bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base"
+            onClick={() => scrollToSection("contact")}
+          >
+            Get In Touch
           </Button>
           <Button
-            asChild
             variant="outline"
             size="lg"
             className="bg-white/10 text-white border-white hover:bg-white/20 text-sm sm:text-base"
+            onClick={() => scrollToSection("about")}
           >
-            <a href="#about">Learn More</a>
+            Learn More
           </Button>
         </div>
         <div className="flex justify-center gap-6 pt-4 md:pt-6">
@@ -104,4 +115,3 @@ export default function Hero() {
     </section>
   )
 }
-
