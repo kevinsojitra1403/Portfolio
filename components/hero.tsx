@@ -54,7 +54,7 @@ export default function Hero() {
           )}
         </div>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 drop-shadow-lg max-w-2xl mx-auto">
-          Business Systems Analyst at the City of London, driving enterprise platform management, security operations, and process optimization across municipal systems.
+          Business Systems Analyst at the City of London, supporting platform operations, service management, and system administration for municipal teams.
         </p>
         <div className="flex flex-wrap justify-center gap-3 md:gap-4 pt-4">
           <Button
