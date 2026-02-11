@@ -5,6 +5,20 @@ import { Briefcase, Calendar } from "lucide-react"
 export default function Experience() {
   const experiences = [
     {
+      title: "Business Systems Analyst",
+      company: "City of London",
+      companyDescription: "Municipal Corporation",
+      period: "Jan 2026 - Present",
+      location: "London, ON, CA",
+      description: [
+        "Lead for the PeopleWorks platform, managing service requests and incident resolution to ensure seamless system operations across the organization.",
+        "Handle end-to-end incident management and service request workflows, ensuring timely resolution and minimal business disruption.",
+        "Perform security checkups and audits on enterprise systems to maintain compliance and protect organizational data integrity.",
+        "Hands-on experience working with SAP BTP (Business Technology Platform), SAP IAS (Identity Authentication Service), and SAP IPS (Identity Provisioning Service) for identity management and platform integration.",
+        "Collaborate with cross-functional teams to optimize business processes and drive continuous improvement across municipal systems.",
+      ],
+    },
+    {
       title: "Junior Software Engineer",
       company: "Goldensource International Pvt. Ltd",
       companyDescription: "Enterprise Data Management Solutions for Global Financial Institutions",
@@ -33,7 +47,7 @@ export default function Experience() {
     {
       title: "Barista",
       company: "Starbucks Canada",
-      period: "Feb 2025 - Present",
+      period: "Feb 2025 - Jan 2026",
       location: "London, ON, CA",
       description: [
         "Served 100+ customers daily with 95%+ satisfaction, improving team workflow efficiency by 20% during peak hours.",

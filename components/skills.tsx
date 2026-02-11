@@ -3,16 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import SectionHeading from "@/components/section-heading"
-import {
-  LineChart,
-  FileText,
-  Code,
-  GitBranch,
-  TestTube,
-  MessageSquare,
-  PenToolIcon as Tool,
-  Settings,
-} from "lucide-react"
+import { LineChart, FileText, Code, GitBranch, TestTube, MessageSquare, PenTool as Tool, Settings } from "lucide-react"
 import { motion } from "framer-motion"
 
 export default function Skills() {
@@ -118,10 +109,15 @@ export default function Skills() {
         "Confluence",
         "SSIS",
         "SAP S/4HANA",
+        "SAP BTP",
+        "SAP IAS",
+        "SAP IPS",
         "SQL Server Analysis Services (SSAS)",
         "Visual Studio",
         "Jira",
         "Git/GitHub",
+        "Figma",
+        "Visio",
       ],
     },
     {

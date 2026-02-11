@@ -6,9 +6,9 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Kevin Sojitra | Portfolio",
-  description: "Junior Software Engineer with expertise in Business Analysis, Data Analysis, and Database Management",
-    generator: 'v0.dev'
+  title: "Kevin Sojitra | Business Systems Analyst",
+  description: "Business Systems Analyst at City of London with expertise in SAP BTP, Business Analysis, Data Analysis, and Enterprise Systems Management",
+    generator: 'v0.app'
 }
 
 export const viewport: Viewport = {

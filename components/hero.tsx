@@ -41,14 +41,10 @@ export default function Hero() {
           {mounted && (
             <TypeAnimation
               sequence={[
-                "Software Engineer",
-                1000,
                 "Business Analyst",
-                1000,
-                "Data Analyst",
-                1000,
-                "Database Developer",
-                1000,
+                2000,
+                "Business Systems Analyst",
+                2000,
               ]}
               wrapper="h2"
               speed={50}
@@ -58,8 +54,7 @@ export default function Hero() {
           )}
         </div>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 drop-shadow-lg max-w-2xl mx-auto">
-          Seeking Junior / Entry Level positions to leverage my skills in software development, business analysis, data
-          analysis, and database management.
+          Business Systems Analyst at the City of London, driving enterprise platform management, security operations, and process optimization across municipal systems.
         </p>
         <div className="flex flex-wrap justify-center gap-3 md:gap-4 pt-4">
           <Button

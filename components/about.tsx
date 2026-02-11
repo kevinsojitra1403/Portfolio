@@ -10,28 +10,28 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           <div className="md:col-span-2 space-y-6">
             <p className="text-lg text-muted-foreground">
-              I am a recent graduate with a Post-Graduate Diploma in Business & Information Systems Architecture from
-              Fanshawe College, and a Bachelor's degree in Information Technology. My academic journey has equipped me
-              with a strong foundation in both business and technology, allowing me to bridge the gap between these two
-              crucial domains.
+              I am a Business Systems Analyst at the City of London, where I serve as the lead for the PeopleWorks
+              platform -- managing service requests, incident resolution, and security operations across municipal
+              enterprise systems. My work involves hands-on experience with SAP BTP, SAP IAS, and SAP IPS for identity
+              management and platform integration.
             </p>
             <p className="text-lg text-muted-foreground">
-              My professional experience includes roles as a Junior Software Engineer and Associate Trainee at
-              Goldensource International, where I honed my skills in data analysis, database management, and software
-              development. I have a proven track record of improving data accuracy, implementing efficient data
-              extraction solutions, and collaborating with cross-functional teams to enhance data mapping and validation
-              protocols.
+              With a Post-Graduate Diploma in Business & Information Systems Architecture from Fanshawe College and a
+              Bachelor of Science in Information Technology, I bring a strong foundation in both business and technology.
+              My professional journey includes roles at Goldensource International, where I honed my skills in
+              enterprise data management, SQL-based process automation, Power BI reporting, and cross-functional
+              collaboration for global financial institutions.
             </p>
             <p className="text-lg text-muted-foreground">
               I am passionate about leveraging technology to solve complex business problems and drive data-informed
-              decisions. My technical skills include advanced SQL querying, data visualization using tools like Tableau
-              and Power BI, and programming in Python with libraries such as Pandas and NumPy. I am also proficient in
-              database design, optimization, ETL processes, and agile project management methodologies.
+              decisions. My technical toolkit includes advanced SQL, Power BI, SAP platforms, data validation and ETL
+              workflows, and agile project management. I thrive at the intersection of business analysis, systems
+              integration, and quality assurance.
             </p>
             <p className="text-lg text-muted-foreground">
-              As I embark on my career, I am eager to apply my skills and knowledge in a junior role where I can
-              contribute to meaningful projects, continue learning, and grow as a professional in the dynamic field of
-              technology and business analysis.
+              I am committed to continuous learning and professional growth, always looking for opportunities to optimize
+              processes, enhance system security, and deliver meaningful outcomes through technology and analytical
+              thinking.
             </p>
           </div>
           <div>
