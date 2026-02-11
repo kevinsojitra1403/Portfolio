@@ -5,23 +5,19 @@ import { Award, Calendar } from "lucide-react"
 export default function Certifications() {
   const certifications = [
     {
-      title: "Advanced Prompt Engineering Techniques",
+      title: "Advanced Prompt Engineering",
       issuer: "LinkedIn Learning",
       date: "Nov 2024",
-      skills: "Artificial Intelligence (AI), Prompt Engineering",
     },
     {
-      title: "Generative AI Course",
+      title: "Generative AI",
       issuer: "NVIDIA",
       date: "Aug 2024",
-      skills:
-        "Generative AI Basics, AI Trends and Technologies, AI in Real-World Applications, Introduction to Machine Learning, Understanding AI Applications",
     },
     {
-      title: "Introduction to Packet Tracer",
+      title: "Introduction to the Packet Tracer",
       issuer: "Cisco",
       date: "Sep 2023",
-      skills: "Packet Tracer",
     },
     {
       title: "Starting Your Career as a Financial Analyst",
@@ -29,27 +25,7 @@ export default function Certifications() {
       date: "Sep 2022",
     },
     {
-      title: "Cybersecurity at Work",
-      issuer: "LinkedIn Learning",
-      date: "Jul 2022",
-    },
-    {
-      title: "Learning Java",
-      issuer: "LinkedIn Learning",
-      date: "Jun 2022",
-    },
-    {
       title: "Oracle Database 12c: Basic SQL",
-      issuer: "LinkedIn Learning",
-      date: "Jun 2022",
-    },
-    {
-      title: "Programming Foundations: Databases",
-      issuer: "LinkedIn Learning",
-      date: "Jun 2022",
-    },
-    {
-      title: "Unix Essential Training",
       issuer: "LinkedIn Learning",
       date: "Jun 2022",
     },
@@ -65,7 +41,7 @@ export default function Certifications() {
     },
     {
       title: "Data Science Using Python",
-      issuer: "Remarkskill Education",
+      issuer: "Remark Skill Education",
       date: "May 2021",
     },
     {
@@ -92,11 +68,6 @@ export default function Certifications() {
                       <Calendar className="h-3 w-3" />
                       <span>{cert.date}</span>
                     </div>
-                    {cert.skills && (
-                      <p className="text-xs md:text-sm text-muted-foreground mt-1.5 md:mt-2 line-clamp-2">
-                        <strong>Skills:</strong> {cert.skills}
-                      </p>
-                    )}
                   </div>
                 </div>
               </CardContent>
@@ -107,4 +78,3 @@ export default function Certifications() {
     </section>
   )
 }
-

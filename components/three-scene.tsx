@@ -51,4 +51,3 @@ export default function ThreeScene() {
 
   return <div ref={mountRef} className="absolute inset-0 z-0" />
 }
-

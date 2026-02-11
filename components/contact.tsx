@@ -59,7 +59,7 @@ export default function Contact() {
           >
             <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Get In Touch</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+              Feel free to reach out if you have a question, want to discuss business analysis or systems architecture, or just want to connect.
             </p>
 
             <div className="space-y-4">
@@ -238,4 +238,3 @@ export default function Contact() {
     </section>
   )
 }
-

@@ -12,55 +12,73 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "DAS Feasibility Analysis",
+      title: "Mallify – Capstone Project",
+      company: "Fanshawe College",
+      date: "Apr 2025",
+      category: "web-development",
+      description: [
+        "Built an admin dashboard for a mall loyalty system using Firebase CRUD operations.",
+        "Participated in sprint planning, version control, and peer reviews.",
+        "Created UI storyboards and functional workflows to guide development and stakeholder feedback.",
+      ],
+      technologies: "React, Firebase, HTML/CSS/JS",
+    },
+    {
+      title: "Business Solutions Architecture, Big Data Reporting & ERP Coursework",
+      company: "Fanshawe College",
+      date: "Apr 2025",
+      category: "business-intelligence",
+      description: [
+        "Built KPI dashboards using Power BI and Tableau, applying data visualization best practices for business decision-making.",
+        "Performed data cleansing and ETL with SSIS on AdventureWorks Data Warehouse 2019.",
+        "Worked with SQL Server Analysis Services (SSAS) to manage multidimensional data models and cubes.",
+        "Developed ETL pipelines in Visual Studio, integrating data sources to support enterprise reporting.",
+        "Gained hands-on experience with SAP S/4HANA (Global Bike 3.3 dataset) in an ERP simulation environment via the SAP University Alliance.",
+        "Executed real-world business transactions in SAP (Procurement, Sales, Inventory, and Financials) for process analysis and ERP understanding.",
+      ],
+      technologies: "Power BI, Tableau, SSIS, SQL Server Analysis Services (SSAS), SAP S/4HANA, Visual Studio",
+    },
+    {
+      title: "DAS Feasibility Analysis - JNAM",
       company: "Goldensource International Pvt. Ltd",
       date: "Jun 2023",
       category: "data-analysis",
       description: [
-        "Defined and tracked key performance metrics, boosting data accuracy by 30%.",
-        "Developed interactive Tableau visualizations, enabling stakeholders to make data-driven decisions.",
+        "Conducted data quality assessments, reducing errors in reporting by 30%.",
+        "Developed KPI tracking matrices to improve visibility and decision-making efficiency.",
       ],
+      technologies: "PostgreSQL, MDS (GoldenSource proprietary tool), Excel",
     },
     {
-      title: "Fund Master",
+      title: "Fund Master - JNAM",
       company: "Goldensource International Pvt. Ltd",
       date: "May 2023",
       category: "database",
       description: [
-        "Designed SQL-based data solutions for reporting and analysis, ensuring 100% accuracy.",
-        "Led workshops on SQL techniques, increasing team proficiency and project scalability.",
+        "Developed and optimized SQL scripts, improving fund data extraction efficiency by 40% and reducing manual intervention and processing errors.",
+        "Created detailed test case documentation and performed UI testing, increasing pre-production defect detection by 25%.",
+        "Supported UAT through data validation and cleansing, enhancing data accuracy by 30%, set up dev servers using Unix shell scripting, improving deployment speed by 20%, and contributed to procurement documentation for streamlined vendor evaluation.",
       ],
+      technologies: "MDS (GoldenSource), PostgreSQL, WinSCP, Unix Shell Scripting",
     },
     {
-      title: "Project for Nuveen",
-      company: "Goldensource International Pvt. Ltd.",
-      date: "Jan 2023",
-      category: "data-engineering",
+      title: "ICOE Internal Team Member",
+      company: "Goldensource International Pvt. Ltd",
+      date: "Apr 2023",
+      category: "business-intelligence",
       description: [
-        "Enhanced data mapping and validation protocols, improving reporting accuracy by 20%.",
-        "Collaborated with cross-functional teams to meet project deadlines, achieving 100% stakeholder satisfaction.",
-        "Automated data pipeline processes, reducing manual intervention by 30%.",
+        "Created Power BI dashboards and automated internal workflows to improve reporting and analytics.",
+        "Assisted in documentation and collaboration across multiple internal teams for data operations.",
       ],
+      technologies: "Power BI, PowerApps, Power Automate, SharePoint, Confluence",
     },
     {
-      title: "Car-Selling-Price-Prediction API",
+      title: "Car Selling Price Prediction API",
       company: "Final Year Project, Bachelor of Science in IT - Pillai College",
       date: "Apr 2022",
       category: "machine-learning",
-      description: [
-        "Designed a web platform for predicting car prices, optimizing user flows and improving the customer experience by 30%.",
-        "Conducted usability testing and incorporated feedback to enhance the platform's mobile-first functionality.",
-      ],
-    },
-    {
-      title: "Avishkar Participant",
-      company: "University Of Mumbai",
-      date: "Apr 2022",
-      category: "research",
-      description: [
-        "Ranked in the top 10% out of 500+ participants in a data-driven research competition.",
-        "Delivered a high-quality presentation, improving the clarity and impact of research findings.",
-      ],
+      description: ["Built a machine learning model using Python & SQL for price prediction with a web interface."],
+      technologies: "Python, JavaScript, Flask, SQL, HTML, CSS, Anaconda",
     },
   ]
 
@@ -81,6 +99,20 @@ export default function Projects() {
             All
           </Button>
           <Button
+            onClick={() => setFilter("web-development")}
+            variant={filter === "web-development" ? "default" : "outline"}
+            className="whitespace-nowrap"
+          >
+            Web Development
+          </Button>
+          <Button
+            onClick={() => setFilter("business-intelligence")}
+            variant={filter === "business-intelligence" ? "default" : "outline"}
+            className="whitespace-nowrap"
+          >
+            Business Intelligence
+          </Button>
+          <Button
             onClick={() => setFilter("data-analysis")}
             variant={filter === "data-analysis" ? "default" : "outline"}
             className="whitespace-nowrap"
@@ -95,29 +127,15 @@ export default function Projects() {
             Database
           </Button>
           <Button
-            onClick={() => setFilter("data-engineering")}
-            variant={filter === "data-engineering" ? "default" : "outline"}
-            className="whitespace-nowrap"
-          >
-            Data Engineering
-          </Button>
-          <Button
             onClick={() => setFilter("machine-learning")}
             variant={filter === "machine-learning" ? "default" : "outline"}
             className="whitespace-nowrap"
           >
             Machine Learning
           </Button>
-          <Button
-            onClick={() => setFilter("research")}
-            variant={filter === "research" ? "default" : "outline"}
-            className="whitespace-nowrap"
-          >
-            Research
-          </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-8 md:mt-12">
+        <div className="grid grid-cols-1 gap-4 md:gap-6 mt-8 md:mt-12">
           {filteredProjects.map((project, index) => (
             <motion.div
               key={index}
@@ -132,6 +150,9 @@ export default function Projects() {
                     <ArrowUpRight className="h-5 w-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <CardDescription className="text-primary line-clamp-1">{project.company}</CardDescription>
+                  {project.technologies && (
+                    <p className="text-xs text-muted-foreground mt-1 font-medium">{project.technologies}</p>
+                  )}
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center gap-2 mb-3">
@@ -154,4 +175,3 @@ export default function Projects() {
     </section>
   )
 }
-

@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h2 className="text-2xl font-bold">Kevin Sojitra</h2>
-            <p className="text-muted-foreground mt-2">Junior Software Engineer</p>
+            <p className="text-muted-foreground mt-2">Business Systems Analyst</p>
           </div>
 
           <div className="flex gap-6">
@@ -48,4 +48,3 @@ export default function Footer() {
     </footer>
   )
 }
-
