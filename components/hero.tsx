@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail } from "lucide-react"
-import { TypeAnimation } from "react-type-animation"
 import { motion } from "framer-motion"
 import ThreeScene from "@/components/three-scene"
 
@@ -38,23 +37,12 @@ export default function Hero() {
           Hi, I&apos;m Kevin Sojitra
         </h1>
         <div className="h-8 md:h-12">
-          {mounted && (
-            <TypeAnimation
-              sequence={[
-                "Business Analyst",
-                2000,
-                "Business Systems Analyst",
-                2000,
-              ]}
-              wrapper="h2"
-              speed={50}
-              className="text-lg sm:text-xl md:text-3xl font-medium text-blue-300 drop-shadow-lg"
-              repeat={Number.POSITIVE_INFINITY}
-            />
-          )}
+          <h2 className="text-lg sm:text-xl md:text-3xl font-medium text-blue-300 drop-shadow-lg">
+            Business Systems Analyst
+          </h2>
         </div>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 drop-shadow-lg max-w-2xl mx-auto">
-          Business Systems Analyst at the City of London, supporting platform operations, service management, and system administration for municipal teams.
+          Business Systems Analyst at the City of London, managing enterprise applications and overseeing PeopleWorks service requests and incident resolution.
         </p>
         <div className="flex flex-wrap justify-center gap-3 md:gap-4 pt-4">
           <Button
